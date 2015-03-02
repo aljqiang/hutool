@@ -5,6 +5,14 @@ package com.xiaoleilu.hutool;
  * @author xiaoleilu
  */
 public class EscapeUtil {
+
+	public static void main(String[] args) {
+		System.out.println(escape("赖洁强"));
+		System.out.println(unescape("%u8d56%u6d01%u5f3a"));
+		System.out.println(safeUnescape("赖洁强"));
+	}
+
+
 	/**
 	 * Escape编码（Unicode）
 	 * @param content

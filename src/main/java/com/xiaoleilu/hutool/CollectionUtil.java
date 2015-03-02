@@ -21,6 +21,25 @@ import java.util.Stack;
  * 
  */
 public class CollectionUtil {
+
+	public static void main(String[] args) {
+		String[] str=new String[4];
+		str[0]="a";
+		str[1]="b";
+		str[2]="c";
+//		str[3]="d";
+
+		List<String> list=new ArrayList<String>();
+
+		list.add("aaa");
+		list.add("bbb");
+		list.add("ccc");
+
+
+//		System.out.println(join(str,"-"));
+		System.out.println(isEmpty(str));
+	}
+
 	/**
 	 * 以 conjunction 为分隔符将集合转换为字符串
 	 * 

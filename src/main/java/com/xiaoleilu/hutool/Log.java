@@ -3,9 +3,9 @@ package com.xiaoleilu.hutool;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.xiaoleilu.hutool.StrUtil;
-
 public class Log {
+	private static Logger log = Log.get();
+
 	/**
 	 * 获得Logger
 	 * @param clazz 日志发出的类
@@ -210,4 +210,22 @@ public class Log {
 		return LoggerFactory.getLogger(stackTrace[3].getClassName());
 	}
 	//----------------------------------------------------------- Private method end
+
+
+	public static void main(String[] args) {
+		//第一种使用方法（效率低）
+		Log.debug("我是一条debug消息");
+
+		//第二种使用方法
+		Log.debug(log, "我是一条debug消息 {} {}", "参数1", "参数2");
+
+		RuntimeException e = new RuntimeException("错误");
+
+		//第一种使用方法（效率低）
+		Log.error("我是一条error消息");
+
+		//第二种使用方法
+		Log.error(log, e, "<-异常对象放前面, 我是一条带参数的error消息 {} {}", "参数1", "参数2");
+	}
+
 }

@@ -11,6 +11,13 @@ import java.util.UUID;
  *
  */
 public class RandomUtil {
+
+	public static void main(String[] args) {
+		System.out.println(randomUUID());
+		System.out.println(randomInt());
+		System.out.println(randomInt(1,100));
+	}
+
 	private static Random random = new Random();
 	
 	/** 用于随机选的数字 */

@@ -19,6 +19,11 @@ import com.xiaoleilu.hutool.exceptions.UtilException;
  *
  */
 public class NetUtil {
+
+	public static void main(String[] args) {
+		System.out.println(isUsableLocalPort(5037));
+	}
+
 	public final static String LOCAL_IP = "127.0.0.1";
 	
 	/**

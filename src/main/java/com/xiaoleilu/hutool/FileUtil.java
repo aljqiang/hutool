@@ -28,6 +28,10 @@ import com.xiaoleilu.hutool.exceptions.UtilException;
  *
  */
 public class FileUtil {
+
+	public static void main(String[] args) {
+		System.out.println(listFileNames("F:\\大学资料"));
+	}
 	
 	/** The Unix separator character. */
 	private static final char UNIX_SEPARATOR = '/';
