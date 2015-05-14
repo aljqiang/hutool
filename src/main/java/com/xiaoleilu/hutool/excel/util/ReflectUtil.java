@@ -98,9 +98,9 @@ public class ReflectUtil {
                             String.class, double.class}, new Object[]{1001,
                             "Linux", 30, "123", 20.55});
             System.out.println(user);
-            com.xiaoleilu.hutool.excel.ReflectUtil.invokeSetter(user, "salery", 2055);
+            com.xiaoleilu.hutool.excel.util.ReflectUtil.invokeSetter(user, "salery", 2055);
             System.out.println(user);
-            Object ret = com.xiaoleilu.hutool.excel.ReflectUtil.invokeGetter(user, "salery");
+            Object ret = com.xiaoleilu.hutool.excel.util.ReflectUtil.invokeGetter(user, "salery");
             System.out.println(ret);
         } catch (Exception e) {
             e.printStackTrace();
